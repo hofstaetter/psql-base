@@ -16,7 +16,7 @@ RUN mkdir /app
 
 WORKDIR /app
 
-RUN pip3 install --no-cache-dir requests pyodbc phonenumbers
+RUN pip3 install --no-cache-dir requests pyodbc
     
 COPY Zen-Client-linux-x86_64-*.tar.gz /zen.tgz
 COPY etc/* /etc/
