@@ -19,6 +19,7 @@ WORKDIR /app
 RUN pip3 install --no-cache-dir requests pyodbc
     
 COPY Zen-Client-linux-x86_64-*.tar.gz /zen.tgz
+COPY etc/* /etc/
 
 RUN tar -C /usr/local -xf /zen.tgz && \
     bash /usr/local/actianzen/etc/clientpreinstall.sh && \
