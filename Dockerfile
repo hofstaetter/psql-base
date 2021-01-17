@@ -23,7 +23,8 @@ COPY etc/* /etc/
 
 RUN tar -C /usr/local -xf /zen.tgz && \
     bash /usr/local/actianzen/etc/clientpreinstall.sh && \
-    bash /usr/local/actianzen/etc/clientpostinstall.sh && rm -f /zen.tgz
+    bash /usr/local/actianzen/etc/clientpostinstall.sh && \
+    rm -f /zen.tgz
 
 ENV LD_LIBRARY_PATH=/usr/local/actianzen/lib64/
 
