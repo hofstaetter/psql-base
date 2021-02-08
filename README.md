@@ -11,7 +11,8 @@ Docker Image um mit Pervasive SQL zu arbeiten. Benötigt noch den Actian Zen PSQ
  
 ## Building
  
-````
+```
 cd psql-base
 docker build . --tag psql-base
+
 ```
