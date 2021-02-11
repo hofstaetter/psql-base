@@ -12,6 +12,7 @@ Docker Image um via python 3 auf Pervasive SQL (Actian Zen SQL) zugreifen zu kö
 ## Building
  
 ```
+git clone git@github.com:hofstaetter/psql-base
 docker build psql-base/ --tag psql-base
 ```
 
